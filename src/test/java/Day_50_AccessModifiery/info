@@ -1,0 +1,23 @@
+
+Access Modifiers (Public, Private, Protected, Default)
+
+Erisim alanlarini belirler
+1- Class ici erisim
+2- Paket ici erisim
+3- Proje ici erisim
+
+Erisim bilgileri/ belirleyici-leri :
+
+Public : Tum projenin paketlerinden ve classlarindan erisilme imkani verir
+        Projedeki fields, methods, constructors,
+
+Private : Sadace class ici erisim saglar.Fields ve Methods
+        Baska hicbir yerden erisilme imkani yoktur.
+        (ISTISNA) Encapsulation da GET ve SET methodlari ile erisilebilir
+
+Default : Paket icerisinde classlar arasinda erisim saglayabilir.
+        Privatein paket versiyonu gibi dusunulebilir.
+        Fields ve Method ve Paket icerisindeki classlara erisim mumkun
+
+Protected : Default ile ayni erisimi saglamaktadir. SADECE bir FARKI var
+           Iheritance yani KALITIM ile paketler arasi erisim saglar

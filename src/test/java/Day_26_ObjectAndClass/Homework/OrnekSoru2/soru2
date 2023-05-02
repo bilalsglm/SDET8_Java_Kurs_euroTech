@@ -1,0 +1,8 @@
+
+Bir Üniversitede öğrencilere ders kaydı yapılacaktır.
+1- Ders sınınıfı ayrı dosyada : adı: Lesson , fields : name, credit (1-10 arasında değer alıyor)
+2- Öğrenci Sınıfı ayrı dosyada: adı: Student, fields : name, maxCredit
+3- 3 adet ders oluşturunuz.
+4- 1 adet öğrenci tanımlayınız alabileceği maxCredi si 12 olsun.
+5- Eğer kredi miktarını aşmıyorsa dersi alabileceğini söyleyin. Ama krediyi aşıyorsa Kredi miktarını aştığını söyleyiniz. Birden fazla ders alabilsin.
+6- Aldığı dersleri ve krediyi yazdırınız. (Method veya diğer yolu tercih edebilirsiniz)

@@ -1,0 +1,6 @@
+
+1.Adım  :Person isimli bir class yazınız:fields: name, surname, age, ıd; olsun.
+2.Adım  :main de 2 tane bu sınıftan nesne oluşturup değer atayınız.
+3.Adım  :getBirthYear isminde Person a ait bir metod yazınız, çalıştığında kişinin doğum yılını versin.
+4.Adım  :getVerıfyId ısmınde bir Person a aıt method yazınız. Burada çalıştıgında ıd lerın ilk ve son rakamları aynı olma olmama durumunu cevaplasın.
+5.Adım  :Son olarak bu kişinin bilgileri yazdıran bir method yazınız. Burada kişinin özel biri olup olmadığına TRUE olmasına göre karar vereceksiniz.
