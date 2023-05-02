@@ -1,4 +1,4 @@
-package Day_4_Variables;
+package Day_04_Variables;
 
 public class _3_Exsample {
     public static void main(String[] args) {

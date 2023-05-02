@@ -1,4 +1,4 @@
-package Day_5_DateType;
+package Day_05_DateType;
 
 public class _1_DateType {
     public static void main(String[] args) { // Main methodu. susulu parentez icinde yer alan hersey methoda ait.

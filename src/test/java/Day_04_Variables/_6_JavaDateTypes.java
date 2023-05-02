@@ -1,6 +1,4 @@
-package Day_4_Variables;
-
-import sun.util.resources.cldr.zh.TimeZoneNames_zh;
+package Day_04_Variables;
 
 public class _6_JavaDateTypes {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package Day_5_DateType;
+package Day_05_DateType;
 
 public class _3_DefaultDecleration {
     public static void main(String[] args) {

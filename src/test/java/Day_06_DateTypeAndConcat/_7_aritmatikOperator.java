@@ -1,4 +1,4 @@
-package Day_6_DateTypeAndConcat;
+package Day_06_DateTypeAndConcat;
 
 public class _7_aritmatikOperator {
     public static void main(String[] args) {

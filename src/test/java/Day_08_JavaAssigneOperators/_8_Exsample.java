@@ -1,4 +1,4 @@
-package Day_8_JavaAssigneOperators;
+package Day_08_JavaAssigneOperators;
 
 public class _8_Exsample {
     public static void main(String[] args) {

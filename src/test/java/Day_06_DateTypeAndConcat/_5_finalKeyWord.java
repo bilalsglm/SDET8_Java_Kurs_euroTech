@@ -1,4 +1,4 @@
-package Day_6_DateTypeAndConcat;
+package Day_06_DateTypeAndConcat;
 
 public class _5_finalKeyWord {
     public static void main(String[] args) {
