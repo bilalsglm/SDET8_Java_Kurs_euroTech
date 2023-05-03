@@ -15,14 +15,14 @@ public class Papalina extends Fish {
 
     @Override
     void yasamYeri() {
-        System.out.println("TAtli ve tuzlu suda yasar");
+        System.out.println("Tatli ve tuzlu suda yasar");
 
     }
 
     public static void main(String[] args) {
         Papalina balik1= new Papalina();
         balik1.name="Buyuk Papalna";
-        balik1.toplama(4,5);//Abstract olmayan method objeyi tanimliyor
+        balik1.toplama("Buyuk","Papalina");//Abstract olmayan method objeyi tanimliyor
                                     //Burada objeyi modify etmede kullandik
 
         balik1.ses();//Burada abstract methodu herhangi birsey yazmadan cagirir

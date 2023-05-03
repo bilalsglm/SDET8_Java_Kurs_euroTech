@@ -10,10 +10,10 @@ public class Mercedes extends Car {
     @Override
     void yakit() {
         Scanner sc=new Scanner(System.in);
-        System.out.println("Arac Elektirikli mi True veya False ? ");
-        boolean aracElektirikliMi=sc.nextBoolean();
+        System.out.println("Arac Elektrikli mi True veya False ? ");
+        boolean aracElektrikliMi=sc.nextBoolean();
 
-        if(aracElektirikliMi){
+        if(aracElektrikliMi){
             System.out.println("Yakit dusuk olur");
         }else {
             System.out.println("Yakit yuksek olur");
