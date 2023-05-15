@@ -2,21 +2,21 @@ package Day_54_Inheritance_Compostion_Example;
 
 public class Karabank extends Bank{
 
-    public Karabank(double currentBalance, String accountType) {
+    public Karabank(double currentBalance, AccountType accountType) {
         super(currentBalance+100, accountType);
 
-        switch (getAccountType()){
-            case "GOLD":
+        switch (accountType){
+            case GOLD:
                 setDepositBonus(80);
                 setWithdravExpence(90);
                 setReturnRate(1.4);
                 break;
-            case "SAVING":
+            case SAVING:
                 setDepositBonus(100);
                 setWithdravExpence(70);
                 setReturnRate(1.1);
                 break;
-            case "INTEREST":
+            case INTEREST:
                 setDepositBonus(90);
                 setWithdravExpence(80);
                 setReturnRate(1.2);
@@ -42,6 +42,22 @@ public class Karabank extends Bank{
         } else {
             super.withdraw(withdrawValue + getWithdravExpence());//Burada kesinti ucreti ile cekilen miktar
         }                                                                   // balance dan cikirildigi icin (islem ucreti ile birlikte)
+
+    }
+
+    @Override
+    public void tuzukKur() {
+        System.out.println("Karabank Tuzuk sistemi");
+    }
+
+    @Override
+    public void teminatSistemi() {
+        System.out.println("Karabank teminat sistemi");
+
+    }
+
+    @Override
+    public void HesapAcmaBonusu(AccountType accountType) {
 
     }
 

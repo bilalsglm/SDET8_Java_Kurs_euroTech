@@ -5,7 +5,7 @@ public abstract class Bank {
     //  VARIABLES  ///////////////////////////
 
     private double currentBalance;// ilk hesap acildi, kapansaya kadar hesap dengesini tutar(hesap kaydi)
-    private String accountType;// hesap turu
+    private AccountType accountType;// hesap turu
     boolean isAccountClosed;// Hesap KAPALI MI? -- // kapatildi mi
     private double depositBonus;// Para yatirma kosullarina bagli olarak verilen BONUS para miktari
     private double withdravExpence;// Para cekme kosullarina bagli olarak islem ucreti(Hesap turune bagli)
@@ -13,16 +13,16 @@ public abstract class Bank {
 
 
     //  CONSTRUCTOR  ///////////////////////////
-    public Bank(double currentBalance, String accountType) {
+    public Bank(double currentBalance, AccountType accountType) {
 //        this.currentBalance = currentBalance;
 //        this.accountType = accountType;
 
     // Encapsulation ile constructor olusturduk
         this.setCurrentBalance(currentBalance);
-        this.setAccountType(accountType);
+       // this.setAccountType(accountType);
         //getClass().getSimpleName() --> Obje creat edildiginde constructorin oldugu class ismini cagirir
         //Bu java OBJE classina ait framwork (kutuphane bilgisini cagirdik)
-        System.out.println(getClass().getSimpleName()+" ´a HOSGELDINIZ!! \nHesap Turu :"+this.getAccountType());
+        System.out.println(getClass().getSimpleName()+" ´a HOSGELDINIZ!! \nHesap Turu :"+accountType);
         this.isAccountClosed=false;// Hesap acildi
     }
 
@@ -61,6 +61,17 @@ public abstract class Bank {
         }
     }
 
+
+
+    // ABSTRACKT METHODLAR//////////////
+
+    public abstract void tuzukKur();
+    public abstract void teminatSistemi();
+    public abstract void HesapAcmaBonusu(AccountType accountType);
+
+
+
+
     //  GET   SET METHODLARI  ///////////////////////////
     public double getCurrentBalance() {
         return currentBalance;
@@ -75,13 +86,13 @@ public abstract class Bank {
             this.currentBalance=currentBalance;// Hesabu actiginda yatirdigi para hesabina eklendi
         }
     }
-    public String getAccountType() {
-        return accountType;
-    }
-
-    public void setAccountType(String accountType) {
-        this.accountType = accountType.toUpperCase();// hasabin tuurnu berlirledik
-    }
+//    public String getAccountType() {
+//        return accountType;
+//    }
+//
+//    public void setAccountType(String accountType) {
+//        this.accountType = accountType.toUpperCase();// hasabin tuurnu berlirledik
+//    }
 
     public double getDepositBonus() {
         return depositBonus;
@@ -107,7 +118,12 @@ public abstract class Bank {
         this.returnRate = returnRate;
     }
 
+
+
+
 }
+
+
 
 
 

@@ -7,12 +7,12 @@ public class TestA {
     public static void main(String[] args) {
 
         //Bank b1=new Bank(-5,"saving");
-        Akbank ismetBankaHesabi=new Akbank(1000,"savIng");
+        Akbank ismetBankaHesabi=new Akbank(1000,AccountType.SAVING);
         System.out.println("ismetBankaHesabi.getCurrentBalance() = " + ismetBankaHesabi.getCurrentBalance());
         System.out.println("ismetBankaHesabi.getDepositBonus() = " + ismetBankaHesabi.getDepositBonus());
 
 
-        Karabank ismetBankaHesabi2=new Karabank(1120,"gold");
+        Karabank ismetBankaHesabi2=new Karabank(1120,AccountType.GOLD);
       //  System.out.println("ismetBankaHesabi2.getAccountType() = " + ismetBankaHesabi2.getAccountType());
         System.out.println("ismetBankaHesabi2.getCurrentBalance() = " + ismetBankaHesabi2.getCurrentBalance());
         System.out.println("ismetBankaHesabi2.getDepositBonus() = " + ismetBankaHesabi2.getDepositBonus());
