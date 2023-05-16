@@ -16,7 +16,7 @@ public class _02_TryCatch {
             System.out.println("Test");
 
         }catch (ArithmeticException ex){
-            ex.printStackTrace();
+            ex.printStackTrace();//Kirmizi gelen hatayi yaziyordu
         }
 
     }
