@@ -1,4 +1,4 @@
-package Day_60_Collections_2;
+package Day_60_Collections_02;
 
 public class _HomeWork_1 {
     //Soru 1: Bir HashSet random olarak 10 adet element olacak sekilde
